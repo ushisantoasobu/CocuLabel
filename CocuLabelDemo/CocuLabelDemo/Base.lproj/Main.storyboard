@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="CocuLabelDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ppc-Ep-MNI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <view alpha="0.49999999999999983" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxc-Sr-P3v">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIc-jl-MZf">
+                                        <rect key="frame" x="100" y="7" width="120" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="RWw-Qi-XQm"/>
+                                            <constraint firstAttribute="height" constant="30" id="lc8-rL-5VU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" red="0.25490196079999999" green="0.7843137255" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNextTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="q6e-hZ-J2c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="8Y5-Pt-Qd7"/>
+                                    <constraint firstAttribute="centerY" secondItem="sIc-jl-MZf" secondAttribute="centerY" id="OaJ-oi-2H2"/>
+                                    <constraint firstAttribute="centerX" secondItem="sIc-jl-MZf" secondAttribute="centerX" id="teI-mq-bfr"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iniesta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RiP-aU-vGx" customClass="CocuLabel" customModule="CocuLabelDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="257" width="288" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="sXc-ID-niH"/>
+                                    <constraint firstAttribute="width" constant="288" id="sYD-OU-I8I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ppc-Ep-MNI" secondAttribute="trailing" id="0p9-OK-h9L"/>
+                            <constraint firstItem="hxc-Sr-P3v" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="5Jh-kl-m4g"/>
+                            <constraint firstAttribute="centerX" secondItem="RiP-aU-vGx" secondAttribute="centerX" id="603-Es-c5D"/>
+                            <constraint firstAttribute="trailing" secondItem="hxc-Sr-P3v" secondAttribute="trailing" id="GqJ-c2-n8K"/>
+                            <constraint firstItem="ppc-Ep-MNI" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Qdp-mo-XqP"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="hxc-Sr-P3v" secondAttribute="bottom" id="YdD-K4-FuI"/>
+                            <constraint firstAttribute="centerY" secondItem="RiP-aU-vGx" secondAttribute="centerY" id="fu6-OX-AQN"/>
+                            <constraint firstItem="ppc-Ep-MNI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="pXi-Ok-76T"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ppc-Ep-MNI" secondAttribute="bottom" id="zM8-UD-wXf"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="iv" destination="ppc-Ep-MNI" id="inH-TH-p14"/>
+                        <outlet property="label" destination="RiP-aU-vGx" id="ic7-m9-Aos"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
